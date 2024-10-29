@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMESAPP.ReservaPage"
+              Title="Reservar Mesa">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Entry Placeholder="Restaurante" x:Name="RestauranteEntry"/>
+        <DatePicker x:Name="FechaPicker"/>
+        <TimePicker x:Name="HoraPicker"/>
+        <Entry Placeholder="Número de Personas" Keyboard="Numeric" x:Name="PersonasEntry"/>
+        <Entry Placeholder="Bebida" x:Name="BebidaEntry"/>
+        <Entry Placeholder="Comida" x:Name="ComidaEntry"/>
+        <Entry Placeholder="Postre (Opcional)" x:Name="PostreEntry"/>
+
+        <Button Text="Confirmar Reservación" Clicked="OnConfirmClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
